@@ -123,5 +123,7 @@ npm run preview = Preview hasil build
 Jika Anda ingin mendiskusikan lebih lanjut mengenai project ini:
 
 Nama: Muhammad Rafsanjani
+
 Email: rafsanjani1719@gmail.com
+
 LinkedIn: www.linkedin.com/in/muhammadrafsanjani17
