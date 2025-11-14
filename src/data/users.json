@@ -1,0 +1,14 @@
+[
+  {"id": 1, "name": "Alice Johnson", "email": "alice@example.com", "role": "Admin", "createdAt": "2024-01-12"},
+  {"id": 2, "name": "Brandon Lee", "email": "brandon@example.com", "role": "User", "createdAt": "2024-02-03"},
+  {"id": 3, "name": "Cindy Park", "email": "cindy@example.com", "role": "User", "createdAt": "2024-02-20"},
+  {"id": 4, "name": "Daniel Wu", "email": "daniel@example.com", "role": "Manager", "createdAt": "2024-03-01"},
+  {"id": 5, "name": "Eva Green", "email": "eva@example.com", "role": "User", "createdAt": "2024-03-15"},
+  {"id": 6, "name": "Frank Martin", "email": "frank@example.com", "role": "User", "createdAt": "2024-04-05"},
+  {"id": 7, "name": "Grace Kim", "email": "grace@example.com", "role": "Admin", "createdAt": "2024-05-17"},
+  {"id": 8, "name": "Hiro Tanaka", "email": "hiro@example.com", "role": "User", "createdAt": "2024-06-21"},
+  {"id": 9, "name": "Isla Fisher", "email": "isla@example.com", "role": "User", "createdAt": "2024-07-07"},
+  {"id": 10, "name": "Jack Ryan", "email": "jack@example.com", "role": "Manager", "createdAt": "2024-07-25"},
+  {"id": 11, "name": "Kira Novak", "email": "kira@example.com", "role": "User", "createdAt": "2024-08-05"},
+  {"id": 12, "name": "Liam Brown", "email": "liam@example.com", "role": "User", "createdAt": "2024-09-01"}
+]
