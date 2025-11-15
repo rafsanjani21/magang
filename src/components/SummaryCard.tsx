@@ -4,8 +4,7 @@ type Props = {
   title: string;
   value: string | number;
   icon: ReactNode;
-  variant?: "default" | "highlight"; 
-  // highlight = untuk Total Users
+  variant?: "default" | "highlight";
   colors?: {
     cardBg?: string;
     title?: string;
@@ -14,17 +13,23 @@ type Props = {
   };
 };
 
-export default function SummaryCard({ title, value, icon, variant = "default", colors }: Props) {
+export default function SummaryCard({
+  title,
+  value,
+  icon,
+  variant = "default",
+  colors,
+}: Props) {
   // Default Style
   const defaultStyle = {
-    cardBg: "#ffffff",
-    title: "#383333",
-    value: "#383333",
+    cardBg: "#4f506b",
+    title: "#FFFFFF",
+    value: "#FFFFFF",
     iconBg: "#d8a801",
   };
 
   const highlightStyle = {
-    cardBg: colors?.cardBg || "#1E3A8A",
+    cardBg: colors?.cardBg || "#4f506b",
     title: colors?.title || "#E0E7FF",
     value: colors?.value || "#FFFFFF",
     iconBg: colors?.iconBg || "#4338CA",
@@ -34,14 +39,17 @@ export default function SummaryCard({ title, value, icon, variant = "default", c
 
   return (
     <div
-      className="p-4 rounded-2xl shadow-md flex items-center gap-4 hover:shadow-lg transition-all justify-between"
+      className="p-5 rounded-2xl shadow-md flex items-center gap-4 hover:shadow-lg transition-all justify-between"
       style={{ backgroundColor: style.cardBg }}
     >
       <div>
         <p className="text-sm" style={{ color: style.title }}>
           {title}
         </p>
-        <p className="text-2xl font-semibold mt-1" style={{ color: style.value }}>
+        <p
+          className="text-2xl font-semibold mt-1"
+          style={{ color: style.value }}
+        >
           {value}
         </p>
       </div>

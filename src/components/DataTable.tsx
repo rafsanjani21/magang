@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import users from "../data/users.json";
 
-type User = typeof users[number];
+type User = (typeof users)[number];
 type SortKey = keyof User | null;
 type SortDir = "asc" | "desc";
 
@@ -75,8 +75,8 @@ export default function DataTable() {
   };
 
   return (
-    <div className="bg-white p-5 rounded-xl">
-      <div className="flex flex-col sm:flex-row gap-3 mb-4">
+    <div className="bg-transparent p-5 rounded-xl">
+      <div className="flex flex-col sm:flex-row gap-3 mb-4 text-white">
         <input
           type="text"
           placeholder="Search name or email..."
@@ -86,19 +86,20 @@ export default function DataTable() {
         />
 
         <select
-          className="p-2 rounded-lg shadow-md focus:ring-2 focus:ring-[#d9aa00] outline-none transition"
+          className="p-2 rounded-lg shadow-md outline-none transition text-white cursor-pointer bg-transparent focus:ring-2 focus:ring-[#d9aa00]"
           value={role}
           onChange={(e) => setRole(e.target.value)}
         >
           {roles.map((r) => (
-            <option key={r}>{r}</option>
+            <option key={r} className="bg-black/40 backdrop-blur-md text-white">
+              {r}
+            </option>
           ))}
         </select>
       </div>
 
-      {/* Table */}
       <div className="overflow-x-auto rounded-lg shadow-md">
-        <table className="w-full text-[#383333]">
+        <table className="w-full text-white">
           <thead className="bg-[#d9aa00] shadow-md">
             <tr className="text-left text-white">
               {["id", "name", "email", "role", "createdAt"].map((key) => (
@@ -122,7 +123,7 @@ export default function DataTable() {
             {current.map((u) => (
               <tr
                 key={u.id}
-                className="hover:bg-gray-50 transition shadow-sm"
+                className="hover:bg-black/10 transition shadow-sm cursor-pointer"
               >
                 <td className="p-3">{u.id}</td>
                 <td className="p-3">{u.name}</td>
@@ -134,7 +135,7 @@ export default function DataTable() {
 
             {current.length === 0 && (
               <tr>
-                <td colSpan={5} className="p-4 text-center text-gray-500">
+                <td colSpan={5} className="p-4 text-center text-white">
                   No data found
                 </td>
               </tr>
@@ -143,9 +144,8 @@ export default function DataTable() {
         </table>
       </div>
 
-      {/* Pagination */}
       <div className="flex justify-between items-center mt-4">
-        <p className="text-sm text-gray-600">
+        <p className="text-sm text-white">
           Page {page} of {totalPages}
         </p>
 
