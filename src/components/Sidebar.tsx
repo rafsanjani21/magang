@@ -51,7 +51,7 @@ export default function Sidebar() {
           <button
             onClick={toggle}
             className="absolute -right-4 top-6 w-8 h-8 bg-[#111827] 
-            text-white flex items-center justify-center rounded-full shadow"
+            text-white flex items-center justify-center rounded-full shadow cursor-pointer"
           >
             {collapsed ? <ChevronRight size={18} /> : <ChevronLeft size={18} />}
           </button>
