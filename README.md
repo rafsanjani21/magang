@@ -59,7 +59,9 @@ Project ini dibuat sebagai bagian dari take-home test Frontend Engineer.
 ## Folder Structure
 
 src/
+
 │── assets/
+
 │── components/
 │ ├── Sidebar.tsx
 │ ├── Header.tsx
@@ -67,19 +69,19 @@ src/
 │ ├── DataTable.tsx
 │ ├── ChartCard.tsx
 │ └── PieChartCard.tsx
-│
+
 │── context/
 │ ├── AuthContext.tsx
 │ └── SidebarContext.tsx
-│
+
 │── data/
 │ └── users.json
 │
-│
+
 │── pages/
 │ ├── Login.tsx
 │ └── Dashboard.tsx
-│
+
 │── App.tsx
 │── main.tsx
 │── index.css
@@ -111,7 +113,9 @@ Digunakan untuk line chart & pie chart
 
 ## Available Scripts
 npm run dev = Menjalankan development server
+
 npm run build = Build project untuk production
+
 npm run preview = Preview hasil build
 
 ## Contact
@@ -119,5 +123,7 @@ npm run preview = Preview hasil build
 Jika Anda ingin mendiskusikan lebih lanjut mengenai project ini:
 
 Nama: Muhammad Rafsanjani
+
 Email: rafsanjani1719@gmail.com
+
 LinkedIn: www.linkedin.com/in/muhammadrafsanjani17
